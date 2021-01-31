@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!--
+  Definitions of code/type NOT defined by a dedicated DB table
+-->
+
+<Types>
+    <Type NAME="ItemType">
+        <TypeCode CODE="0" DESCRIPTION="Standard"/>
+        <TypeCode CODE="1" DESCRIPTION="Matrix"/>
+        <TypeCode CODE="2" DESCRIPTION="Lot"/>
+        <TypeCode CODE="3" DESCRIPTION="BOM"/>
+        <TypeCode CODE="4" DESCRIPTION="Kit"/>
+        <TypeCode CODE="5" DESCRIPTION="Note"/>
+    </Type>
+
+    <Type NAME="LabelType">
+        <TypeCode CODE="0" DESCRIPTION="Avery Label 5160"/>
+        <TypeCode CODE="1" DESCRIPTION="Avery Label 5161"/>
+        <TypeCode CODE="2" DESCRIPTION="Avery Label 5162"/>
+    </Type>
+
+    <Type NAME="CommissionMode">
+        <TypeCode CODE="0" DESCRIPTION="By Percent of Sales"/>
+        <TypeCode CODE="1" DESCRIPTION="By Percent of Profit"/>
+        <TypeCode CODE="2" DESCRIPTION="By Fixed Ammount"/>
+    </Type>
+    <Type NAME="PageType">
+        <TypeCode CODE="0" DESCRIPTION="A0"/>
+        <TypeCode CODE="1" DESCRIPTION="A1"/>
+        <TypeCode CODE="2" DESCRIPTION="A10"/>
+        <TypeCode CODE="3" DESCRIPTION="A2"/>
+        <TypeCode CODE="4" DESCRIPTION="A3"/>
+        <TypeCode CODE="5" DESCRIPTION="A4"/>
+        <TypeCode CODE="6" DESCRIPTION="A5"/>
+        <TypeCode CODE="7" DESCRIPTION="A6"/>
+        <TypeCode CODE="8" DESCRIPTION="A7"/>
+        <TypeCode CODE="9" DESCRIPTION="A8"/>
+        <TypeCode CODE="10" DESCRIPTION="A9"/>
+        <TypeCode CODE="11" DESCRIPTION="ARCH_A"/>
+        <TypeCode CODE="12" DESCRIPTION="ARCH_B"/>
+        <TypeCode CODE="13" DESCRIPTION="ARCH_C"/>
+        <TypeCode CODE="14" DESCRIPTION="ARCH_D"/>
+        <TypeCode CODE="15" DESCRIPTION="B0"/>
+        <TypeCode CODE="16" DESCRIPTION="B1"/>
+        <TypeCode CODE="17" DESCRIPTION="B10"/>
+        <TypeCode CODE="18" DESCRIPTION="B2"/>
+        <TypeCode CODE="19" DESCRIPTION="B3"/>
+        <TypeCode CODE="20" DESCRIPTION="B4"/>
+        <TypeCode CODE="21" DESCRIPTION="B5"/>
+        <TypeCode CODE="22" DESCRIPTION="B6"/>
+        <TypeCode CODE="23" DESCRIPTION="B7"/>
+        <TypeCode CODE="24" DESCRIPTION="B8"/>
+        <TypeCode CODE="25" DESCRIPTION="B9"/>
+        <TypeCode CODE="26" DESCRIPTION="C0"/>
+        <TypeCode CODE="27" DESCRIPTION="C1"/>
+        <TypeCode CODE="28" DESCRIPTION="C10"/>
+        <TypeCode CODE="29" DESCRIPTION="C2"/>  
+        <TypeCode CODE="30" DESCRIPTION="C3"/>
+        <TypeCode CODE="30" DESCRIPTION="C4"/>
+        <TypeCode CODE="31" DESCRIPTION="C5"/>
+        <TypeCode CODE="32" DESCRIPTION="C6"/>
+        <TypeCode CODE="33" DESCRIPTION="C7"/>
+        <TypeCode CODE="34" DESCRIPTION="C8"/>
+        <TypeCode CODE="35" DESCRIPTION="C9"/>   
+        <TypeCode CODE="36" DESCRIPTION="FLSA"/>  
+        <TypeCode CODE="37" DESCRIPTION="FLSE"/>
+        <TypeCode CODE="38" DESCRIPTION="HALFLETTER"/>
+        <TypeCode CODE="39" DESCRIPTION="LEDGER"/>
+        <TypeCode CODE="40" DESCRIPTION="LEGAL"/>
+        <TypeCode CODE="41" DESCRIPTION="LETTER"/>
+        <TypeCode CODE="42" DESCRIPTION="NOTE"/>
+    </Type>    
+    <Type NAME="BarcodeFormat">
+        <TypeCode CODE="0" DESCRIPTION="2 of 5"/>
+        <TypeCode CODE="1" DESCRIPTION="Interleaved 2 of 5"/>
+        <TypeCode CODE="2" DESCRIPTION="3 of 9"/>
+        <TypeCode CODE="3" DESCRIPTION="Codebar (rationalized)"/>
+        <TypeCode CODE="4" DESCRIPTION="3 of 9 (extended)"/>
+        <TypeCode CODE="5" DESCRIPTION="Code 128A"/>
+        <TypeCode CODE="6" DESCRIPTION="Code 128B"/>
+        <TypeCode CODE="7" DESCRIPTION="Code 129C"/>
+        <TypeCode CODE="8" DESCRIPTION="UPC-A"/>
+        <TypeCode CODE="9" DESCRIPTION="MSI(Plessey)"/>
+        <TypeCode CODE="10" DESCRIPTION="Code 93"/>
+        <TypeCode CODE="11" DESCRIPTION="Extended Code 93"/>
+        <TypeCode CODE="12" DESCRIPTION="EAN 13"/>
+        <TypeCode CODE="13" DESCRIPTION="EAN 8"/>
+        <TypeCode CODE="14" DESCRIPTION="PostNet"/>
+    </Type>
+    <Type NAME="PriceLevel">
+        <TypeCode CODE="0" DESCRIPTION="Retail"/>
+        <TypeCode CODE="1" DESCRIPTION="WholeSale"/>
+        <TypeCode CODE="2" DESCRIPTION="Employee"/>
+        <TypeCode CODE="3" DESCRIPTION="Internet"/>
+    </Type>
+    <Type NAME="ReceiptPrinterType">
+        <TypeCode CODE="0" DESCRIPTION="Windows"/>
+        <TypeCode CODE="1" DESCRIPTION="OPOS"/>
+    </Type>
+    <Type NAME="ReceiptPrinterOption">
+        <TypeCode CODE="0" DESCRIPTION="Do not print receipts"/>
+        <TypeCode CODE="1" DESCRIPTION="Print receipts automatically"/>
+        <TypeCode CODE="2" DESCRIPTION="Print receipts by request"/>
+    </Type>
+    <Type NAME="ItemCostType">
+        <TypeCode CODE="0" DESCRIPTION="No Update"/>
+        <TypeCode CODE="1" DESCRIPTION="Landed Cost"/>
+        <TypeCode CODE="2" DESCRIPTION="Average"/>
+    </Type>
+    <Type NAME="POStatus">
+        <TypeCode CODE="0" DESCRIPTION="Open"/>
+        <TypeCode CODE="1" DESCRIPTION="Close"/>
+        <TypeCode CODE="2" DESCRIPTION="Pending"/>
+        <TypeCode CODE="3" DESCRIPTION="Partial"/>
+        <TypeCode CODE="4" DESCRIPTION="Back Order"/>
+    </Type>
+    <Type NAME="POType">
+        <TypeCode CODE="0" DESCRIPTION="Purchase Order"/>
+        <TypeCode CODE="1" DESCRIPTION="Transfer In"/>
+    </Type>
+    <Type NAME="TransactionType">
+        <TypeCode CODE="0" DESCRIPTION="Invoice"/>
+        <TypeCode CODE="1" DESCRIPTION="Order"/>
+        <TypeCode CODE="2" DESCRIPTION="Quote"/>
+        <TypeCode CODE="3" DESCRIPTION="Service Order"/>
+        <TypeCode CODE="4" DESCRIPTION="Internet Order"/>
+        <TypeCode CODE="5" DESCRIPTION="Purchase Order"/>
+        <TypeCode CODE="6" DESCRIPTION="Layaway"/>
+    </Type>    
+    <Type NAME="SalesOrderType">
+        <TypeCode CODE="0" DESCRIPTION="Invoice"/>
+        <TypeCode CODE="1" DESCRIPTION="Order"/>
+        <TypeCode CODE="2" DESCRIPTION="Quote"/>
+        <TypeCode CODE="3" DESCRIPTION="Service"/>
+        <TypeCode CODE="4" DESCRIPTION="Internet"/>
+    </Type>
+    <Type NAME="ItemLog_TransferType">
+        <TypeCode CODE="0" DESCRIPTION="Purchase Order"/>
+        <TypeCode CODE="1" DESCRIPTION="Sales Order"/>
+    </Type>
+    <Type NAME="ReturnType">
+        <TypeCode CODE="0" DESCRIPTION="Return From Customer"/>
+        <TypeCode CODE="1" DESCRIPTION="Return To Vendor"/>
+        <TypeCode CODE="2" DESCRIPTION="Return To Stock"/>
+    </Type>
+
+    <!-- Determines how Item's cost is updated upon purchase with PO -->
+    <Type NAME="ItemCostMethod">
+        <TypeCode CODE="0" DESCRIPTION="No Update"/>
+        <TypeCode CODE="1" DESCRIPTION="Last Cost"/>
+        <TypeCode CODE="2" DESCRIPTION="Weighted Average"/>
+    </Type>
+    <Type NAME="CustomerLookupMethod">
+        <TypeCode CODE="0" DESCRIPTION="Name"/>
+        <TypeCode CODE="1" DESCRIPTION="Account Number"/>
+    </Type>    
+    <Type NAME="ItemLookupMethod">
+        <TypeCode CODE="0" DESCRIPTION="Description"/>
+        <TypeCode CODE="1" DESCRIPTION="SKU"/>
+    </Type>    
+    <Type NAME="ItemPriceMethod">
+        <TypeCode CODE="0" DESCRIPTION="Item Price Level"/>
+        <TypeCode CODE="1" DESCRIPTION="Customer Group Discount"/>
+    </Type>        
+    <Type NAME="PaymentVerification">
+        <TypeCode CODE="0" DESCRIPTION="None"/>
+        <TypeCode CODE="1" DESCRIPTION="Check"/>
+        <TypeCode CODE="2" DESCRIPTION="Credit Card"/>
+        <TypeCode CODE="3" DESCRIPTION="Gift Card"/>
+        <TypeCode CODE="4" DESCRIPTION="Gift Certificate"/>
+    </Type>    
+</Types>

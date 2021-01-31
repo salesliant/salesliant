@@ -1,0 +1,720 @@
+<?xml version="1.0"?>
+<Menus>
+    <MenuBar NAME="Sales Module">
+        <Menu NAME="Main">
+            <MenuItem NAME="Customer List" COMMAND="com.salesliant.ui.CustomerListUI"/>
+            <Separator/>
+            <MenuItem NAME="Quick Sale" COMMAND="com.salesliant.ui.QuickInvoiceUI"/>
+            <MenuItem NAME="New Invoice" COMMAND="com.salesliant.ui.NewInvoiceUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+            <Separator/>
+            <MenuItem NAME="New Order" COMMAND="com.salesliant.ui.NewOrderUI"/>
+            <MenuItem NAME="Order List" COMMAND="com.salesliant.ui.OrderListUI"/>
+            <Separator/>
+            <MenuItem NAME="New Quote" COMMAND="com.salesliant.ui.NewQuoteUI"/>
+            <MenuItem NAME="Quote List" COMMAND="com.salesliant.ui.QuoteListUI"/>
+            <Separator/>          
+            <MenuItem NAME="New Service Order" COMMAND="com.salesliant.ui.NewServiceUI"/>
+            <MenuItem NAME="Service Order List" COMMAND="com.salesliant.ui.ServiceListUI"/>
+            <MenuItem NAME="Service Order History" COMMAND="com.salesliant.ui.ServiceHistoryUI"/>
+            <Separator/>
+            <MenuItem NAME="Account Receivable Payment" COMMAND="com.salesliant.ui.AccountReceivablePaymentUI"/>
+            <MenuItem NAME="Balance Cash Drawer" COMMAND="com.salesliant.ui.PaymentBatchUI"/>
+        </Menu>
+        <Menu NAME="Invoices">
+            <MenuItem NAME="New Invoice" COMMAND="com.salesliant.ui.NewInvoiceUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+        </Menu>
+        <Menu NAME="Orders">
+            <MenuItem NAME="New Order" COMMAND="com.salesliant.ui.NewOrderUI"/>
+            <MenuItem NAME="Order List" COMMAND="com.salesliant.ui.OrderListUI"/>
+        </Menu>
+        <Menu NAME="Service Orders">
+            <MenuItem NAME="New Service Order" COMMAND="com.salesliant.ui.NewServiceUI"/>
+            <MenuItem NAME="Service Order List" COMMAND="com.salesliant.ui.ServiceListUI"/>
+            <MenuItem NAME="Service Order History" COMMAND="com.salesliant.ui.ServiceHistoryUI"/>
+            <Separator/>
+            <MenuItem NAME="Service Appointments" COMMAND="com.salesliant.ui.AppointmentListUI"/>
+            <MenuItem NAME="Service Code List" COMMAND="com.salesliant.ui.ServiceCodeListUI"/>
+        </Menu>
+        <Menu NAME="Quotes">
+            <MenuItem NAME="New Quote" COMMAND="com.salesliant.ui.NewQuoteUI"/>
+            <MenuItem NAME="Quote List" COMMAND="com.salesliant.ui.QuoteListUI"/>
+        </Menu>
+        <Menu NAME="Inventory">
+            <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+            <Separator/>
+            <MenuItem NAME="Item Quantity Discount List" COMMAND="com.salesliant.ui.QuantityDiscountListUI"/>
+            <MenuItem NAME="Item Promotion List" COMMAND="com.salesliant.ui.ItemPromotionListUI"/>
+            <Menu NAME="Item with Attribute List">
+                <MenuItem NAME="Item with Attribute List" COMMAND="com.salesliant.ui.ItemWithAttributeListUI"/>
+                <MenuItem NAME="Item Attribute Type List" COMMAND="com.salesliant.ui.ItemAttributeTypeListUI"/>
+                <MenuItem NAME="Item Attribute Value List" COMMAND="com.salesliant.ui.ItemAttributeValueListUI"/>
+            </Menu>
+            <MenuItem NAME="Item BOM List" COMMAND="com.salesliant.ui.ItemBomListUI"/>
+            <MenuItem NAME="Inactive Items" COMMAND="com.salesliant.ui.ItemInactiveListUI"/>
+            <MenuItem NAME="Item Logs" COMMAND="com.salesliant.ui.ItemLogListUI"/>
+            <MenuItem NAME="Internet Items" COMMAND="com.salesliant.ui.ItemInternetListUI"/>
+            <MenuItem NAME="Item Label List" COMMAND="com.salesliant.ui.ItemLabelListUI"/>
+            <MenuItem NAME="Serial Number List" COMMAND="com.salesliant.ui.SerialNumberListUI"/>
+            <Menu NAME="Inventory Transfers">
+                <MenuItem NAME="Transfer Order List" COMMAND="com.salesliant.ui.TransferOrderListUI"/>
+                <MenuItem NAME="Transfer History List UI" COMMAND="com.salesliant.ui.TransferOrderHistoryListUI"/>
+                <Menu NAME="Transfer Order Report">
+                    <MenuItem NAME="Transfer Order Send By Date" COMMAND="com.salesliant.ui.TransferOrderSendListByDateUI"/>
+                    <MenuItem NAME="Transfer Order Receive By Date" COMMAND="com.salesliant.ui.TransferOrderReceiveListByDateUI"/>
+                </Menu>
+            </Menu>                   
+            <Separator/>
+            <Menu NAME="Return">
+                <MenuItem NAME="Process RMA" COMMAND="com.salesliant.ui.ReturnTransactionListUI"/>
+                <MenuItem NAME="RMA History" COMMAND="com.salesliant.ui.ReturnTransactionHistoryListUI"/>
+            </Menu> 
+            <Separator/>    
+            <Menu NAME="Inventory Reports">
+                <MenuItem NAME="Item Price List" COMMAND="com.salesliant.ui.ItemListUI"/>
+                <MenuItem NAME="Item On Order List" COMMAND="com.salesliant.ui.ItemOnOrderListUI"/>
+                <MenuItem NAME="Item On RMA List" COMMAND="com.salesliant.ui.ItemOnRMAListUI"/>
+                <MenuItem NAME="Item Value List" COMMAND="com.salesliant.ui.ItemValueListUI"/>
+                <MenuItem NAME="Item Substitute List" COMMAND="com.salesliant.ui.ItemSubstituteListUI"/>
+                <MenuItem NAME="Item BackOrder List" COMMAND="com.salesliant.ui.ItemBackOrderListUI"/>
+                <MenuItem NAME="Item Sold Most By Date" COMMAND="com.salesliant.ui.ItemSalesListByDateUI"/>
+                <MenuItem NAME="Item Purchased Most By Date" COMMAND="com.salesliant.ui.ItemPurchaseListByDateUI"/>
+                <MenuItem NAME="Physical Inventory Report" COMMAND="com.salesliant.ui.ItemCountListUI"/>
+            </Menu>
+        </Menu>        
+        <Menu NAME="Reports">
+            <MenuItem NAME="Sales By Date" COMMAND="com.salesliant.ui.InvoiceListByDateUI"/>
+            <MenuItem NAME="Sales By Month" COMMAND="com.salesliant.ui.InvoiceListByMonthUI"/>
+            <MenuItem NAME="Sales By Year" COMMAND="com.salesliant.ui.InvoiceListByYearUI"/>
+            <MenuItem NAME="Sales By Employee" COMMAND="com.salesliant.ui.InvoiceListByEmployeeUI"/>
+            <MenuItem NAME="Sales By Category" COMMAND="com.salesliant.ui.InvoiceListByCategoryUI"/>
+        </Menu>
+        <Menu NAME="Utilities">
+            <MenuItem NAME="Customer List" COMMAND="com.salesliant.ui.CustomerListUI"/>
+            <MenuItem NAME="Customer Email List" COMMAND="com.salesliant.ui.EmailListUI"/>
+            <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+            <MenuItem NAME="Set Station" COMMAND="com.salesliant.ui.StationUI"/>
+            <MenuItem NAME="Physical Inventory Worksheet" COMMAND="com.salesliant.ui.ItemCountListUI"/>
+            <MenuItem NAME="Logout" COMMAND="com.salesliant.ui.LogoutUI"/>
+            <MenuItem NAME="Time Card" COMMAND="com.salesliant.ui.ClockInOutUI"/>
+        </Menu>
+        <Menu NAME="Exit">
+            <MenuItem NAME="Logout" COMMAND="com.salesliant.ui.LogoutUI"/>
+            <MenuItem NAME="Exit" COMMAND="com.salesliant.ui.ExitUI"/>
+        </Menu>  
+    </MenuBar>
+    <ToolBar NAME="Sales Module">
+        <Button NAME="Quick Sales" LABEL="Quick Sales" ICON="OpenDrawer.gif" COMMAND="com.salesliant.ui.QuickInvoiceUI"/>
+        <Separator/>
+        <Button NAME="Invoice List" LABEL="Invoices" ICON="Invoice.gif" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+        <Separator/>
+        <Button NAME="Inventory List" LABEL="Inventory" ICON="Inventory.gif" COMMAND="com.salesliant.ui.ItemListUI"/>
+        <Separator/>
+        <Button NAME="Customer List" LABEL="Customers" ICON="Customers.gif" COMMAND="com.salesliant.ui.CustomerListUI"/>
+        <Separator/>
+        <Button NAME="Time Card" LABEL="Time Card" ICON="TimeCard.gif" COMMAND="com.salesliant.ui.ClockInOutUI"/>
+        <Separator/>
+        <Button NAME="Open Drawer" LABEL="Drawer" ICON="Price.gif" COMMAND="com.salesliant.ui.DropPayoutUI"/>
+        <Separator/>
+        <Button NAME="Login" LABEL="Login/Logout" ICON="Login.gif" COMMAND="com.salesliant.ui.LogoutUI"/>
+    </ToolBar>
+    <MenuBar NAME="Inventory Module">
+        <Menu NAME="Main">
+            <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+            <Separator/>
+            <MenuItem NAME="Purchase Order List" COMMAND="com.salesliant.ui.PurchaseOrderListUI"/>
+            <MenuItem NAME="Purchase Order History" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListUI"/>
+            <Separator/>
+            <MenuItem NAME="Item On Order List" COMMAND="com.salesliant.ui.ItemOnOrderListUI"/>
+            <MenuItem NAME="Item On RMA List" COMMAND="com.salesliant.ui.ItemOnRMAListUI"/>
+            <MenuItem NAME="Item BackOrder List" COMMAND="com.salesliant.ui.ItemBackOrderListUI"/>
+            <Separator/>
+            <MenuItem NAME="Serial Number List" COMMAND="com.salesliant.ui.SerialNumberListUI"/>
+        </Menu>
+        <Menu NAME="Inventory">
+            <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+            <MenuItem NAME="Item Quantity Discount List" COMMAND="com.salesliant.ui.QuantityDiscountListUI"/>
+            <MenuItem NAME="Item Promotion List" COMMAND="com.salesliant.ui.ItemPromotionListUI"/>
+            <Menu NAME="Item with Attribute List">
+                <MenuItem NAME="Item with Attribute List" COMMAND="com.salesliant.ui.ItemWithAttributeListUI"/>
+                <MenuItem NAME="Item Attribute Type List" COMMAND="com.salesliant.ui.ItemAttributeTypeListUI"/>
+                <MenuItem NAME="Item Attribute Value List" COMMAND="com.salesliant.ui.ItemAttributeValueListUI"/>
+            </Menu>            
+            <MenuItem NAME="Item BOM List" COMMAND="com.salesliant.ui.ItemBomListUI"/>
+            <MenuItem NAME="Inactive Items" COMMAND="com.salesliant.ui.ItemInactiveListUI"/>
+            <MenuItem NAME="Item Logs" COMMAND="com.salesliant.ui.ItemLogListUI"/>
+            <MenuItem NAME="Internet Items" COMMAND="com.salesliant.ui.ItemInternetListUI"/>
+            <MenuItem NAME="Item Label List" COMMAND="com.salesliant.ui.ItemLabelListUI"/>
+            <MenuItem NAME="Serial Number List" COMMAND="com.salesliant.ui.SerialNumberListUI"/>
+            <Separator/>
+            <Menu NAME="Inventory Reports">
+                <MenuItem NAME="Item Price List" COMMAND="com.salesliant.ui.ItemListUI"/>
+                <MenuItem NAME="Item On Order List" COMMAND="com.salesliant.ui.ItemOnOrderListUI"/>
+                <MenuItem NAME="Item On RMA List" COMMAND="com.salesliant.ui.ItemOnRMAListUI"/>
+                <MenuItem NAME="Item Value List" COMMAND="com.salesliant.ui.ItemValueListUI"/>
+                <MenuItem NAME="Item Substitute List" COMMAND="com.salesliant.ui.ItemSubstituteListUI"/>
+                <MenuItem NAME="Item BackOrder List" COMMAND="com.salesliant.ui.ItemBackOrderListUI"/>
+                <MenuItem NAME="Item Sold Most By Date" COMMAND="com.salesliant.ui.ItemSalesListByDateUI"/>
+                <MenuItem NAME="Item Purchased Most By Date" COMMAND="com.salesliant.ui.ItemPurchaseListByDateUI"/>
+                <MenuItem NAME="Physical Inventory Report" COMMAND="com.salesliant.ui.ItemCountListUI"/>
+            </Menu>
+        </Menu>
+        <Menu NAME="Vendor">
+            <MenuItem NAME="Vendors List" COMMAND="com.salesliant.ui.VendorListUI"/>
+            <MenuItem NAME="Vendor Items" COMMAND="com.salesliant.ui.VendorItemListUI"/>
+            <MenuItem NAME="Vendor Contact List" COMMAND="com.salesliant.ui.VendorContactListUI"/>
+            <MenuItem NAME="Vendor Shipping Service List" COMMAND="com.salesliant.ui.VendorShippingServiceListUI"/>            
+        </Menu>
+        <Menu NAME="Purchase Order">
+            <MenuItem NAME="Purchase Order List" COMMAND="com.salesliant.ui.PurchaseOrderListUI"/>
+            <MenuItem NAME="Purchase Order History" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListUI"/>
+            <Separator/>
+            <Menu NAME="Purchase Order Report">
+                <MenuItem NAME="Purchase Order By Date" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByDateRangeUI"/>
+                <MenuItem NAME="Purchase Order By Vendor" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByVendorUI"/>
+                <Separator/>
+                <Menu NAME="Purchase Order Summary">
+                    <MenuItem NAME="Purchase Order By Date" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByDateUI"/>
+                    <MenuItem NAME="Purchase Order By Month" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByMonthUI"/>
+                    <MenuItem NAME="Purchase Order By Year" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByYearUI"/>
+                </Menu>
+            </Menu>
+        </Menu>
+        <Menu NAME="Inventory Transfers">
+            <MenuItem NAME="Transfer Order List" COMMAND="com.salesliant.ui.TransferOrderListUI"/>
+            <MenuItem NAME="Transfer History List UI" COMMAND="com.salesliant.ui.TransferOrderHistoryListUI"/>
+            <Menu NAME="Transfer Order Report">
+                <MenuItem NAME="Transfer Order Send By Date" COMMAND="com.salesliant.ui.TransferOrderSendListByDateUI"/>
+                <MenuItem NAME="Transfer Order Receive By Date" COMMAND="com.salesliant.ui.TransferOrderReceiveListByDateUI"/>
+            </Menu>
+        </Menu>                   
+        <Menu NAME="Return">
+            <MenuItem NAME="Process RMA" COMMAND="com.salesliant.ui.ReturnTransactionListUI"/>
+            <MenuItem NAME="RMA History" COMMAND="com.salesliant.ui.ReturnTransactionHistoryListUI"/>
+        </Menu>         
+        <Menu NAME="Maintenance">
+            <MenuItem NAME="Vendor Term List" COMMAND="com.salesliant.ui.VendorTermListUI"/>
+            <Separator/>
+            <MenuItem NAME="Shipping Carrier List" COMMAND="com.salesliant.ui.ShippingCarrierListUI"/>
+            <Separator/>
+            <MenuItem NAME="Department List" COMMAND="com.salesliant.ui.DepartmentListUI"/>
+            <MenuItem NAME="Category List" COMMAND="com.salesliant.ui.CategoryListUI"/>
+            <MenuItem NAME="Bin Location" COMMAND="com.salesliant.ui.BinLocationListUI"/>
+            <Separator/>
+            <MenuItem NAME="Item Price Level List" COMMAND="com.salesliant.ui.ItemPriceLevelListUI"/>
+            <MenuItem NAME="Label Type List" COMMAND="com.salesliant.ui.LabelTypeListUI"/>
+        </Menu>
+        <Menu NAME="Utilities">
+            <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+            <MenuItem NAME="Customer List" COMMAND="com.salesliant.ui.CustomerListUI"/>
+            <MenuItem NAME="Customer Email List" COMMAND="com.salesliant.ui.EmailListUI"/>
+            <MenuItem NAME="Vendor List" COMMAND="com.salesliant.ui.VendorListUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+            <MenuItem NAME="Set Station" COMMAND="com.salesliant.ui.StationUI"/>
+            <MenuItem NAME="Physical Inventory Worksheet" COMMAND="com.salesliant.ui.ItemCountListUI"/>
+            <MenuItem NAME="Logout" COMMAND="com.salesliant.ui.LogoutUI"/>
+            <MenuItem NAME="Time Card" COMMAND="com.salesliant.ui.ClockInOutUI"/>
+        </Menu>
+        <Menu NAME="Exit">
+            <MenuItem NAME="Logout" COMMAND="com.salesliant.ui.LogoutUI"/>
+            <MenuItem NAME="Exit" COMMAND="com.salesliant.ui.ExitUI"/>
+        </Menu>   
+    </MenuBar>
+    <ToolBar NAME="Inventory Module">
+        <Button NAME="Invoice List" LABEL="Invoices" ICON="Invoice.gif" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+        <Separator/>
+        <Button NAME="Inventory List" LABEL="Inventory" ICON="Inventory.gif" COMMAND="com.salesliant.ui.ItemListUI"/>
+        <Separator/>
+        <Button NAME="Customer List" LABEL="Customers" ICON="Customers.gif" COMMAND="com.salesliant.ui.CustomerListUI"/>
+        <Separator/>
+        <Button NAME="Time Card" LABEL="Time Card" ICON="TimeCard.gif" COMMAND="com.salesliant.ui.ClockInOutUI"/>
+        <Separator/>
+        <Button NAME="Open Drawer" LABEL="Drawer" ICON="Price.gif" COMMAND="com.salesliant.ui.DropPayoutUI"/>
+        <Separator/>
+        <Button NAME="Login" LABEL="Login/Logout" ICON="Login.gif" COMMAND="com.salesliant.ui.LogoutUI"/>
+    </ToolBar>
+    <MenuBar NAME="Accounting Module">
+        <Menu NAME="Main">
+            <MenuItem NAME="Customer List" COMMAND="com.salesliant.ui.CustomerListUI"/>
+            <Separator/>
+            <MenuItem NAME="Quick Sale" COMMAND="com.salesliant.ui.QuickInvoiceUI"/>
+            <MenuItem NAME="New Invoice" COMMAND="com.salesliant.ui.NewInvoiceUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+            <Separator/>
+            <MenuItem NAME="New Order" COMMAND="com.salesliant.ui.NewOrderUI"/>
+            <MenuItem NAME="Order List" COMMAND="com.salesliant.ui.OrderListUI"/>
+            <Separator/>
+            <MenuItem NAME="New Quote" COMMAND="com.salesliant.ui.NewQuoteUI"/>
+            <MenuItem NAME="Quote List" COMMAND="com.salesliant.ui.QuoteListUI"/>
+            <Separator/>          
+            <MenuItem NAME="New Service Order" COMMAND="com.salesliant.ui.NewServiceUI"/>
+            <MenuItem NAME="Service Order List" COMMAND="com.salesliant.ui.ServiceListUI"/>
+            <MenuItem NAME="Service Order History" COMMAND="com.salesliant.ui.ServiceHistoryUI"/>
+            <Separator/>
+            <MenuItem NAME="Account Receivable Payment" COMMAND="com.salesliant.ui.AccountReceivablePaymentUI"/>
+            <MenuItem NAME="Balance Cash Drawer" COMMAND="com.salesliant.ui.PaymentBatchUI"/>
+        </Menu>
+        <Menu NAME="Invoices">
+            <MenuItem NAME="New Invoice" COMMAND="com.salesliant.ui.NewInvoiceUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+        </Menu>
+        <Menu NAME="Sales Orders">
+            <MenuItem NAME="New Order" COMMAND="com.salesliant.ui.NewOrderUI"/>
+            <MenuItem NAME="Order List" COMMAND="com.salesliant.ui.OrderListUI"/>
+        </Menu>
+        <Menu NAME="Service Orders">
+            <MenuItem NAME="New Service Order" COMMAND="com.salesliant.ui.NewServiceUI"/>
+            <MenuItem NAME="Service Order List" COMMAND="com.salesliant.ui.ServiceListUI"/>
+            <MenuItem NAME="Service Order History" COMMAND="com.salesliant.ui.ServiceHistoryUI"/>
+            <Separator/>
+            <MenuItem NAME="Service Appointments" COMMAND="com.salesliant.ui.AppointmentListUI"/>
+            <MenuItem NAME="Service Code List" COMMAND="com.salesliant.ui.ServiceCodeListUI"/>
+        </Menu>
+        <Menu NAME="Quotes">
+            <MenuItem NAME="New Quote" COMMAND="com.salesliant.ui.NewQuoteUI"/>
+            <MenuItem NAME="Quote List" COMMAND="com.salesliant.ui.QuoteListUI"/>
+        </Menu>
+        <Menu NAME="Inventory">
+            <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+            <MenuItem NAME="Item Quantity Discount List" COMMAND="com.salesliant.ui.QuantityDiscountListUI"/>
+            <MenuItem NAME="Item Promotion List" COMMAND="com.salesliant.ui.ItemPromotionListUI"/>
+            <Menu NAME="Item with Attribute List">
+                <MenuItem NAME="Item with Attribute List" COMMAND="com.salesliant.ui.ItemWithAttributeListUI"/>
+                <MenuItem NAME="Item Attribute Type List" COMMAND="com.salesliant.ui.ItemAttributeTypeListUI"/>
+                <MenuItem NAME="Item Attribute Value List" COMMAND="com.salesliant.ui.ItemAttributeValueListUI"/>
+            </Menu>            
+            <MenuItem NAME="Item BOM List" COMMAND="com.salesliant.ui.ItemBomListUI"/>
+            <MenuItem NAME="Inactive Items" COMMAND="com.salesliant.ui.ItemInactiveListUI"/>
+            <MenuItem NAME="Item Logs" COMMAND="com.salesliant.ui.ItemLogListUI"/>
+            <MenuItem NAME="Internet Items" COMMAND="com.salesliant.ui.ItemInternetListUI"/>
+            <MenuItem NAME="Item Label List" COMMAND="com.salesliant.ui.ItemLabelListUI"/>
+            <MenuItem NAME="Serial Number List" COMMAND="com.salesliant.ui.SerialNumberListUI"/>
+            <Separator/>
+            <Menu NAME="Inventory Transfers">
+                <MenuItem NAME="Transfer Order List" COMMAND="com.salesliant.ui.TransferOrderListUI"/>
+                <MenuItem NAME="Transfer History List UI" COMMAND="com.salesliant.ui.TransferOrderHistoryListUI"/>
+                <Menu NAME="Transfer Order Report">
+                    <MenuItem NAME="Transfer Order Send By Date" COMMAND="com.salesliant.ui.TransferOrderSendListByDateUI"/>
+                    <MenuItem NAME="Transfer Order Receive By Date" COMMAND="com.salesliant.ui.TransferOrderReceiveListByDateUI"/>
+                </Menu>
+            </Menu>                   
+            <Separator/>
+            <Menu NAME="Return">
+                <MenuItem NAME="Process RMA" COMMAND="com.salesliant.ui.ReturnTransactionListUI"/>
+                <MenuItem NAME="RMA History" COMMAND="com.salesliant.ui.ReturnTransactionHistoryListUI"/>
+            </Menu>   
+            <Separator/>  
+            <Menu NAME="Inventory Reports">
+                <MenuItem NAME="Item Price List" COMMAND="com.salesliant.ui.ItemListUI"/>
+                <MenuItem NAME="Item On Order List" COMMAND="com.salesliant.ui.ItemOnOrderListUI"/>
+                <MenuItem NAME="Item On RMA List" COMMAND="com.salesliant.ui.ItemOnRMAListUI"/>
+                <MenuItem NAME="Item Value List" COMMAND="com.salesliant.ui.ItemValueListUI"/>
+                <MenuItem NAME="Item Substitute List" COMMAND="com.salesliant.ui.ItemSubstituteListUI"/>
+                <MenuItem NAME="Item BackOrder List" COMMAND="com.salesliant.ui.ItemBackOrderListUI"/>
+                <MenuItem NAME="Item Sold Most By Date" COMMAND="com.salesliant.ui.ItemSalesListByDateUI"/>
+                <MenuItem NAME="Item Purchased Most By Date" COMMAND="com.salesliant.ui.ItemPurchaseListByDateUI"/>
+                <MenuItem NAME="Physical Inventory Report" COMMAND="com.salesliant.ui.ItemCountListUI"/>
+            </Menu>
+        </Menu>    
+        <Menu NAME="Purchase Order">
+            <MenuItem NAME="Purchase Order List" COMMAND="com.salesliant.ui.PurchaseOrderListUI"/>
+            <MenuItem NAME="Purchase Order History" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListUI"/>
+            <Separator/>
+            <Menu NAME="Purchase Order Report">
+                <MenuItem NAME="Purchase Order By Date" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByDateRangeUI"/>
+                <MenuItem NAME="Purchase Order By Vendor" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByVendorUI"/>
+                <Menu NAME="Purchase Order Summary">
+                    <MenuItem NAME="Purchase Order By Date" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByDateUI"/>
+                    <MenuItem NAME="Purchase Order By Month" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByMonthUI"/>
+                    <MenuItem NAME="Purchase Order By Year" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByYearUI"/>
+                </Menu>
+            </Menu>
+        </Menu>
+        <Menu NAME="Accounts Receiveable">
+            <MenuItem NAME="AR Process" COMMAND="com.salesliant.ui.AccountReceivableProcessUI"/>
+            <MenuItem NAME="AR Reports" COMMAND="com.salesliant.ui.AccountReceivableReportUI"/>
+            <Separator/>
+            <MenuItem NAME="Store Credits" COMMAND="com.salesliant.ui.AccountReceivableCreditListUI"/>
+            <Separator/>
+            <MenuItem NAME="AR Transaction By Date" COMMAND="com.salesliant.ui.AccountReceivableByDateListUI"/>
+            <MenuItem NAME="AR Payment By Date" COMMAND="com.salesliant.ui.AccountReceivablePaymentListUI"/>
+            <Separator/>
+            <MenuItem NAME="Checks Tendered" COMMAND="com.salesliant.ui.CheckListUI"/>
+            <MenuItem NAME="Uncollectable Debts" COMMAND="com.salesliant.ui.AccountReceivableUncollectableListUI"/>
+            <MenuItem NAME="Bad Checks" COMMAND="com.salesliant.ui.BadCheckListUI"/>
+        </Menu>
+        <Menu NAME="Accounts Payable">
+            <MenuItem NAME="Post AP Transactions" COMMAND="com.salesliant.ui.AccountPayableListUI"/>
+            <MenuItem NAME="Process Posted AP" COMMAND="com.salesliant.ui.AccountPayablePostedListUI"/>
+            <Separator/>
+            <Menu NAME="AP Reports">
+                <MenuItem NAME="AP Aging Report"  COMMAND="com.salesliant.ui.AccountPayableReportUI"/>
+                <MenuItem NAME="Account Payable History List" COMMAND="com.salesliant.ui.AccountPayableHistoryListUI"/>
+                <MenuItem NAME="Account Payable History By Batch List" COMMAND="com.salesliant.ui.AccountPayableHistoryByBatchListUI"/>
+                <MenuItem NAME="Account Payable History By Vendor List" COMMAND="com.salesliant.ui.AccountPayableHistoryByVendorListUI"/>
+            </Menu>
+        </Menu>
+        <Menu NAME="Processing">
+            <MenuItem NAME="Payment Batch" COMMAND="com.salesliant.ui.PaymentBatchUI"/>
+            <MenuItem NAME="Account Receivable Payment" COMMAND="com.salesliant.ui.AccountReceivablePaymentUI"/>
+            <MenuItem NAME="Process Check Refunds" COMMAND="com.salesliant.ui.AccountReceivableCreditListUI"/>
+            <Separator/>           
+            <MenuItem NAME="Enter Bad Checks" COMMAND="com.salesliant.ui.BadCheckListUI"/>
+            <Separator/>           
+            <Menu NAME="Process Commission">
+                <MenuItem NAME="Sales Commission Posting" COMMAND="com.salesliant.ui.CommissionPostingUI"/>
+                <MenuItem NAME="Sales Commission History" COMMAND="com.salesliant.ui.CommissionHistoryListUI"/>
+            </Menu>
+            <Separator/>
+            <MenuItem NAME="Employee Time Cards"  COMMAND="com.salesliant.ui.TimeCardListUI"/>
+            <MenuItem NAME="Employee Time Cards Report"  COMMAND="com.salesliant.ui.TimeCardReportUI"/>
+        </Menu>
+        <Menu NAME="Reports">
+            <Menu NAME="Sales Summary">
+                <MenuItem NAME="Sales By Date" COMMAND="com.salesliant.ui.InvoiceListByDateUI"/>
+                <MenuItem NAME="Sales By Month" COMMAND="com.salesliant.ui.InvoiceListByMonthUI"/>
+                <MenuItem NAME="Sales By Year" COMMAND="com.salesliant.ui.InvoiceListByYearUI"/>
+                <MenuItem NAME="Sales By Employee" COMMAND="com.salesliant.ui.InvoiceListByEmployeeUI"/>
+                <MenuItem NAME="Sales By Category" COMMAND="com.salesliant.ui.InvoiceListByCategoryUI"/>
+            </Menu>
+            <Separator/>
+            <MenuItem NAME="Sales Tax Report" COMMAND="com.salesliant.ui.TaxReportUI"/>
+            <Menu NAME="Top Performers">
+                <MenuItem NAME="Top Sales Reps"  COMMAND="com.salesliant.ui.TopSalesUI"/>
+                <MenuItem NAME="Top Service Reps"  COMMAND="com.salesliant.ui.TopServiceRepsUI"/>
+                <MenuItem NAME="Top Customers"  COMMAND="com.salesliant.ui.TopCustomerUI"/>
+                <MenuItem NAME="Top Vendors" COMMAND="com.salesliant.ui.TopVendorUI"/>
+                <MenuItem NAME="Top Items" COMMAND="com.salesliant.ui.TopItemUI"/>
+            </Menu>
+            <Separator/>
+            <MenuItem NAME="Drop Payout List" COMMAND="com.salesliant.ui.DropPayoutListUI"/>
+            <MenuItem NAME="Non-Inventory Sales" COMMAND="com.salesliant.ui.ItemNonInventorySaleListUI"/>
+            <MenuItem NAME="Line Item Mark-Downs" COMMAND="com.salesliant.ui.ItemMarkDownListUI"/>
+            <MenuItem NAME="Commission Summary" COMMAND="com.salesliant.ui.CommissionHistoryListUI"/>
+            <MenuItem NAME="Deposit On File" COMMAND="com.salesliant.ui.DepositOnFileListUI"/>
+            <MenuItem NAME="Gift Certificates Outstanding" COMMAND="com.salesliant.ui.GiftCertificateListUI"/>
+            <Separator/>
+            <Menu NAME="Voided List">
+                <MenuItem NAME="Voided Invoices" COMMAND="com.salesliant.ui.VoidedInvoiceListUI"/>
+                <MenuItem NAME="Voided Orders" COMMAND="com.salesliant.ui.VoidedOrderListUI"/>
+                <MenuItem NAME="Voided Service" COMMAND="com.salesliant.ui.VoidedServiceListUI"/>
+                <MenuItem NAME="Voided Quotes" COMMAND="com.salesliant.ui.VoidedQuoteListUI"/>
+                <MenuItem NAME="Voided Internet Orders" COMMAND="com.salesliant.ui.VoidedInternetOrderListUI"/>
+            </Menu>
+            <Separator/>
+            <Menu NAME="Register Balance/Tender History">
+                <MenuItem NAME="Payment Batch History" COMMAND="com.salesliant.ui.BatchListUI"/>
+            </Menu>
+        </Menu>
+        <Menu NAME="Utilities">
+            <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+            <MenuItem NAME="Customer List" COMMAND="com.salesliant.ui.CustomerListUI"/>
+            <MenuItem NAME="Customer Email List" COMMAND="com.salesliant.ui.EmailListUI"/>
+            <MenuItem NAME="Vendor List" COMMAND="com.salesliant.ui.VendorListUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+            <MenuItem NAME="Set Station" COMMAND="com.salesliant.ui.StationUI"/>
+            <MenuItem NAME="Physical Inventory Worksheet" COMMAND="com.salesliant.ui.ItemCountListUI"/>
+            <MenuItem NAME="Logout" COMMAND="com.salesliant.ui.LogoutUI"/>
+            <MenuItem NAME="Time Card" COMMAND="com.salesliant.ui.ClockInOutUI"/>
+        </Menu>
+        <Menu NAME="Exit">
+            <MenuItem NAME="Logout" COMMAND="com.salesliant.ui.LogoutUI"/>
+            <MenuItem NAME="Exit" COMMAND="com.salesliant.ui.ExitUI"/>
+        </Menu>        
+    </MenuBar>
+    <ToolBar NAME="Accounting Module">
+        <Button NAME="Quick Sales" LABEL="Quick Sales" ICON="OpenDrawer.gif" COMMAND="com.salesliant.ui.QuickInvoiceUI"/>
+        <Separator/>
+        <Button NAME="Invoice List" LABEL="Invoices" ICON="Invoice.gif" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+        <Separator/>
+        <Button NAME="Inventory List" LABEL="Inventory" ICON="Inventory.gif" COMMAND="com.salesliant.ui.ItemListUI"/>
+        <Separator/>
+        <Button NAME="Customer List" LABEL="Customers" ICON="Customers.gif" COMMAND="com.salesliant.ui.CustomerListUI"/>
+        <Separator/>
+        <Button NAME="Time Card" LABEL="Time Card" ICON="TimeCard.gif" COMMAND="com.salesliant.ui.ClockInOutUI"/>
+        <Separator/>
+        <Button NAME="Open Drawer" LABEL="Drawer" ICON="Price.gif" COMMAND="com.salesliant.ui.DropPayoutUI"/>
+        <Separator/>
+        <Button NAME="Login" LABEL="Login/Logout" ICON="Login.gif" COMMAND="com.salesliant.ui.LogoutUI"/>
+    </ToolBar>
+    <MenuBar NAME="Manager Module">
+        <Menu NAME="Sale">
+            <MenuItem NAME="Customer List" COMMAND="com.salesliant.ui.CustomerListUI"/>
+            <MenuItem NAME="Quick Sale" COMMAND="com.salesliant.ui.QuickInvoiceUI"/>
+            <MenuItem NAME="New Invoice" COMMAND="com.salesliant.ui.NewInvoiceUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+            <Separator/>
+            <MenuItem NAME="New Order" COMMAND="com.salesliant.ui.NewOrderUI"/>
+            <MenuItem NAME="Order List" COMMAND="com.salesliant.ui.OrderListUI"/>
+            <Separator/>
+            <MenuItem NAME="New Quote" COMMAND="com.salesliant.ui.NewQuoteUI"/>
+            <MenuItem NAME="Quotes List" COMMAND="com.salesliant.ui.QuoteListUI"/>
+            <Separator/>
+            <MenuItem NAME="Receive Payments" COMMAND="com.salesliant.ui.AccountReceivablePaymentUI"/>
+            <MenuItem NAME="Open Cash Drawer" COMMAND="com.salesliant.ui.DropPayoutUI"/>
+            <MenuItem NAME="Balance Cash Drawer" COMMAND="com.salesliant.ui.PaymentBatchUI"/>
+        </Menu>
+        <Menu NAME="Service">
+            <MenuItem NAME="New Service Order" COMMAND="com.salesliant.ui.NewServiceUI"/>
+            <MenuItem NAME="Service Order List" COMMAND="com.salesliant.ui.ServiceListUI"/>
+            <MenuItem NAME="Service Order History" COMMAND="com.salesliant.ui.ServiceHistoryUI"/>
+            <Separator/>
+            <MenuItem NAME="Service Appointments" COMMAND="com.salesliant.ui.AppointmentListUI"/>
+            <MenuItem NAME="Service Code List" COMMAND="com.salesliant.ui.ServiceCodeListUI"/>
+        </Menu>
+        <Menu NAME="Inventory">
+            <Menu NAME="Inventory">
+                <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+                <MenuItem NAME="Item Quantity Discount List" COMMAND="com.salesliant.ui.QuantityDiscountListUI"/>
+                <MenuItem NAME="Item Promotion List" COMMAND="com.salesliant.ui.ItemPromotionListUI"/>
+                <Menu NAME="Item with Attribute List">
+                    <MenuItem NAME="Item with Attribute List" COMMAND="com.salesliant.ui.ItemWithAttributeListUI"/>
+                    <MenuItem NAME="Item Attribute Type List" COMMAND="com.salesliant.ui.ItemAttributeTypeListUI"/>
+                    <MenuItem NAME="Item Attribute Value List" COMMAND="com.salesliant.ui.ItemAttributeValueListUI"/>
+                </Menu>                
+                <MenuItem NAME="Item BOM List" COMMAND="com.salesliant.ui.ItemBomListUI"/>
+                <MenuItem NAME="Inactive Items" COMMAND="com.salesliant.ui.ItemInactiveListUI"/>
+                <MenuItem NAME="Item Logs" COMMAND="com.salesliant.ui.ItemLogListUI"/>
+                <MenuItem NAME="Internet Items" COMMAND="com.salesliant.ui.ItemInternetListUI"/>
+                <MenuItem NAME="Item Label List" COMMAND="com.salesliant.ui.ItemLabelListUI"/>
+                <MenuItem NAME="Serial Number List" COMMAND="com.salesliant.ui.SerialNumberListUI"/>
+                <Menu NAME="Inventory Reports">
+                    <MenuItem NAME="Item Price List" COMMAND="com.salesliant.ui.ItemListUI"/>
+                    <MenuItem NAME="Item On Order List" COMMAND="com.salesliant.ui.ItemOnOrderListUI"/>
+                    <MenuItem NAME="Item On RMA List" COMMAND="com.salesliant.ui.ItemOnRMAListUI"/>
+                    <MenuItem NAME="Item Value List" COMMAND="com.salesliant.ui.ItemValueListUI"/>
+                    <MenuItem NAME="Item Substitute List" COMMAND="com.salesliant.ui.ItemSubstituteListUI"/>
+                    <MenuItem NAME="Item BackOrder List" COMMAND="com.salesliant.ui.ItemBackOrderListUI"/>
+                    <MenuItem NAME="Item Sold Most By Date" COMMAND="com.salesliant.ui.ItemSalesListByDateUI"/>
+                    <MenuItem NAME="Item Purchased Most By Date" COMMAND="com.salesliant.ui.ItemPurchaseListByDateUI"/>
+                    <MenuItem NAME="Physical Inventory Report" COMMAND="com.salesliant.ui.ItemCountListUI"/>
+                </Menu>
+            </Menu>
+            <Separator/>
+            <Menu NAME="Vendor">
+                <MenuItem NAME="Vendors List" COMMAND="com.salesliant.ui.VendorListUI"/>
+                <MenuItem NAME="Vendor Items" COMMAND="com.salesliant.ui.VendorItemListUI"/>
+                <MenuItem NAME="Vendor Contact List" COMMAND="com.salesliant.ui.VendorContactListUI"/>
+                <MenuItem NAME="Vendor Shipping Service List" COMMAND="com.salesliant.ui.VendorShippingServiceListUI"/>                
+            </Menu>
+            <Separator/>            
+            <Menu NAME="Purchase Order">
+                <MenuItem NAME="Purchase Order List" COMMAND="com.salesliant.ui.PurchaseOrderListUI"/>
+                <MenuItem NAME="Purchase Order History" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListUI"/>
+                <Menu NAME="Purchase Order Report">
+                    <MenuItem NAME="Purchase Order By Date" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByDateRangeUI"/>
+                    <MenuItem NAME="Purchase Order By Vendor" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByVendorUI"/>
+                    <Menu NAME="Purchase Order Summary">
+                        <MenuItem NAME="Purchase Order By Date" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByDateUI"/>
+                        <MenuItem NAME="Purchase Order By Month" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByMonthUI"/>
+                        <MenuItem NAME="Purchase Order By Year" COMMAND="com.salesliant.ui.PurchaseOrderHistoryListByYearUI"/>
+                    </Menu>
+                </Menu>
+            </Menu>
+            <Separator/>
+            <Menu NAME="Inventory Transfers">
+                <MenuItem NAME="Transfer Order List" COMMAND="com.salesliant.ui.TransferOrderListUI"/>
+                <MenuItem NAME="Transfer History List UI" COMMAND="com.salesliant.ui.TransferOrderHistoryListUI"/>
+                <Menu NAME="Transfer Order Report">
+                    <MenuItem NAME="Transfer Order Send By Date" COMMAND="com.salesliant.ui.TransferOrderSendListByDateUI"/>
+                    <MenuItem NAME="Transfer Order Receive By Date" COMMAND="com.salesliant.ui.TransferOrderReceiveListByDateUI"/>
+                </Menu>
+            </Menu>                   
+            <Separator/>
+            <Menu NAME="Return">
+                <MenuItem NAME="Process RMA" COMMAND="com.salesliant.ui.ReturnTransactionListUI"/>
+                <MenuItem NAME="RMA History" COMMAND="com.salesliant.ui.ReturnTransactionHistoryListUI"/>
+            </Menu>         
+        </Menu>
+        <Menu NAME="Accounting">
+            <Menu NAME="Accounts Receiveable">
+                <MenuItem NAME="AR Process" COMMAND="com.salesliant.ui.AccountReceivableProcessUI"/>
+                <MenuItem NAME="AR Reports" COMMAND="com.salesliant.ui.AccountReceivableReportUI"/>
+                <MenuItem NAME="Store Credits" COMMAND="com.salesliant.ui.AccountReceivableCreditListUI"/>
+                <MenuItem NAME="AR Transaction By Date" COMMAND="com.salesliant.ui.AccountReceivableByDateListUI"/>
+                <MenuItem NAME="AR Payment By Date" COMMAND="com.salesliant.ui.AccountReceivablePaymentListUI"/>
+                <Separator/>
+                <MenuItem NAME="Checks Tendered" COMMAND="com.salesliant.ui.CheckListUI"/>
+                <MenuItem NAME="Uncollectable Debts" COMMAND="com.salesliant.ui.AccountReceivableUncollectableListUI"/>
+                <MenuItem NAME="Bad Checks" COMMAND="com.salesliant.ui.BadCheckListUI"/>
+            </Menu>
+            <Separator/>
+            <Menu NAME="Accounts Payable">
+                <MenuItem NAME="Post AP Transactions" COMMAND="com.salesliant.ui.AccountPayableListUI"/>
+                <MenuItem NAME="Process Posted AP" COMMAND="com.salesliant.ui.AccountPayablePostedListUI"/>
+                <Separator/>
+                <Menu NAME="AP Reports">
+                    <MenuItem NAME="AP Aging Report"  COMMAND="com.salesliant.ui.AccountPayableReportUI"/>
+                    <MenuItem NAME="Account Payable History List" COMMAND="com.salesliant.ui.AccountPayableHistoryListUI"/>
+                    <MenuItem NAME="Account Payable History By Batch List" COMMAND="com.salesliant.ui.AccountPayableHistoryByBatchListUI"/>
+                    <MenuItem NAME="Account Payable History By Vendor List" COMMAND="com.salesliant.ui.AccountPayableHistoryByVendorListUI"/>
+                </Menu>
+            </Menu>
+            <Separator/>
+            <Menu NAME="Processing">
+                <MenuItem NAME="Payment Batch" COMMAND="com.salesliant.ui.PaymentBatchUI"/>
+                <MenuItem NAME="Account Receivable Payment" COMMAND="com.salesliant.ui.AccountReceivablePaymentUI"/>
+                <MenuItem NAME="Process Check Refunds" COMMAND="com.salesliant.ui.AccountReceivableCreditListUI"/>
+                <Separator/>
+                <MenuItem NAME="Enter Bad Checks" COMMAND="com.salesliant.ui.BadCheckListUI"/>
+                <Separator/>
+                <Menu NAME="Process Commission">
+                    <MenuItem NAME="Sales Commission Posting" COMMAND="com.salesliant.ui.CommissionPostingUI"/>
+                    <MenuItem NAME="Sales Commission History" COMMAND="com.salesliant.ui.CommissionHistoryListUI"/>
+                </Menu>
+                <Separator/>
+                <MenuItem NAME="Employee Time Cards"  COMMAND="com.salesliant.ui.TimeCardListUI"/>
+                <MenuItem NAME="Employee Time Cards Report"  COMMAND="com.salesliant.ui.TimeCardReportUI"/>
+            </Menu>
+        </Menu>
+        <Menu NAME="Reports">
+            <Menu NAME="Sales Summary">
+                <MenuItem NAME="Sales By Date" COMMAND="com.salesliant.ui.InvoiceListByDateUI"/>
+                <MenuItem NAME="Sales By Month" COMMAND="com.salesliant.ui.InvoiceListByMonthUI"/>
+                <MenuItem NAME="Sales By Year" COMMAND="com.salesliant.ui.InvoiceListByYearUI"/>
+                <MenuItem NAME="Sales By Employee" COMMAND="com.salesliant.ui.InvoiceListByEmployeeUI"/>
+                <MenuItem NAME="Sales By Category" COMMAND="com.salesliant.ui.InvoiceListByCategoryUI"/>
+            </Menu>
+            <Separator/>
+            <MenuItem NAME="Sales Tax Report" COMMAND="com.salesliant.ui.TaxReportUI"/>
+            <Separator/>
+            <Menu NAME="Top Performers">
+                <MenuItem NAME="Top Sales Reps"  COMMAND="com.salesliant.ui.TopSalesUI"/>
+                <MenuItem NAME="Top Service Reps"  COMMAND="com.salesliant.ui.TopServiceRepsUI"/>
+                <MenuItem NAME="Top Customers"  COMMAND="com.salesliant.ui.TopCustomerUI"/>
+                <MenuItem NAME="Top Vendors" COMMAND="com.salesliant.ui.TopVendorUI"/>
+                <MenuItem NAME="Top Items" COMMAND="com.salesliant.ui.TopItemUI"/>
+            </Menu>
+            <Separator/>
+            <MenuItem NAME="Drop Payout List" COMMAND="com.salesliant.ui.DropPayoutListUI"/>
+            <MenuItem NAME="Non-Inventory Sales" COMMAND="com.salesliant.ui.ItemNonInventorySaleListUI"/>
+            <MenuItem NAME="Line Item Mark-Downs" COMMAND="com.salesliant.ui.ItemMarkDownListUI"/>
+            <MenuItem NAME="Commission Summary" COMMAND="com.salesliant.ui.CommissionHistoryListUI"/>
+            <MenuItem NAME="Deposit On File" COMMAND="com.salesliant.ui.DepositOnFileListUI"/>
+            <MenuItem NAME="Gift Certificates Outstanding" COMMAND="com.salesliant.ui.GiftCertificateListUI"/>
+            <Separator/>
+            <Menu NAME="Voided List">
+                <MenuItem NAME="Voided Invoices" COMMAND="com.salesliant.ui.VoidedInvoiceListUI"/>
+                <MenuItem NAME="Voided Orders" COMMAND="com.salesliant.ui.VoidedOrderListUI"/>
+                <MenuItem NAME="Voided Service" COMMAND="com.salesliant.ui.VoidedServiceListUI"/>
+                <MenuItem NAME="Voided Quotes" COMMAND="com.salesliant.ui.VoidedQuoteListUI"/>
+                <MenuItem NAME="Voided Internet Orders" COMMAND="com.salesliant.ui.VoidedInternetOrderListUI"/>
+            </Menu>
+            <Separator/>
+            <Menu NAME="Register Balance/Tender History">
+                <MenuItem NAME="Payment Batch History" COMMAND="com.salesliant.ui.BatchListUI"/>
+            </Menu>
+        </Menu>
+        <Menu NAME="Maintenance">
+            <MenuItem NAME="Customer Groups" COMMAND="com.salesliant.ui.CustomerGroupListUI"/>
+            <MenuItem NAME="Customer Terms" COMMAND="com.salesliant.ui.CustomerTermListUI"/>
+            <Separator/>
+            <MenuItem NAME="Vendor Term List" COMMAND="com.salesliant.ui.VendorTermListUI"/>
+            <Separator/>
+            <MenuItem NAME="Shipping Carrier List" COMMAND="com.salesliant.ui.ShippingCarrierListUI"/>
+            <Separator/>
+            <Menu NAME="Check Items">
+                <MenuItem NAME="Item Quantity Not Found List" COMMAND="com.salesliant.ui.ItemQuantityMissingListUI"/>
+                <MenuItem NAME="Item With Not Prcie List" COMMAND="com.salesliant.ui.ItemZeroPriceListUI"/>
+                <MenuItem NAME="Item With Not Category Name List" COMMAND="com.salesliant.ui.ItemNoCategoryNameListUI"/>
+            </Menu>         
+        </Menu>
+        <Menu NAME="Setup">
+            <Menu NAME="Company Setup">
+                <MenuItem NAME="Company" COMMAND="com.salesliant.ui.StoreUI"/>
+                <MenuItem NAME="Employee List" COMMAND="com.salesliant.ui.EmployeeListUI"/>
+                <MenuItem NAME="Employee Group" COMMAND="com.salesliant.ui.EmployeeGroupListUI"/>
+                <Separator/>
+                <MenuItem NAME="Station List" COMMAND="com.salesliant.ui.StationListUI"/>
+                <MenuItem NAME="Service Code List" COMMAND="com.salesliant.ui.ServiceCodeListUI"/>
+                <MenuItem NAME="Return Reason" COMMAND="com.salesliant.ui.ReasonCodeListUI"/>                
+                <Separator/>
+                <MenuItem NAME="Tax Class List" COMMAND="com.salesliant.ui.TaxClassListUI"/>
+                <MenuItem NAME="Tax Zone List" COMMAND="com.salesliant.ui.TaxZoneListUI"/>
+                <MenuItem NAME="Tax Rate List" COMMAND="com.salesliant.ui.TaxRateListUI"/>
+                <MenuItem NAME="Tax List" COMMAND="com.salesliant.ui.TaxListUI"/>
+                <MenuItem NAME="Zone List" COMMAND="com.salesliant.ui.ZoneListUI"/>
+                <Separator/>
+                <MenuItem NAME="Post Code List" COMMAND="com.salesliant.ui.PostCodeListUI"/>
+                <Separator/>
+                <MenuItem NAME="PaymentType List" COMMAND="com.salesliant.ui.PaymentTypeListUI"/>
+                <MenuItem NAME="Currency List" COMMAND="com.salesliant.ui.CurrencyListUI"/>
+                <MenuItem NAME="Currency Coin List" COMMAND="com.salesliant.ui.CurrencyCoinListUI"/>
+            </Menu>
+            <Separator/>
+            <Menu NAME="Inventory Module Setup">
+                <MenuItem NAME="Item Price Level List" COMMAND="com.salesliant.ui.ItemPriceLevelListUI"/>
+                <MenuItem NAME="Category List" COMMAND="com.salesliant.ui.CategoryListUI"/>
+                <MenuItem NAME="Department List" COMMAND="com.salesliant.ui.DepartmentListUI"/>
+                <MenuItem NAME="Bin Location" COMMAND="com.salesliant.ui.BinLocationListUI"/>
+                <MenuItem NAME="Label Type List" COMMAND="com.salesliant.ui.LabelTypeListUI"/>
+            </Menu>
+        </Menu>
+        <Menu NAME="Utilities">
+            <MenuItem NAME="Item List" COMMAND="com.salesliant.ui.ItemListUI"/>
+            <MenuItem NAME="Customer List" COMMAND="com.salesliant.ui.CustomerListUI"/>
+            <MenuItem NAME="Customer Email List" COMMAND="com.salesliant.ui.EmailListUI"/>
+            <MenuItem NAME="Vendor List" COMMAND="com.salesliant.ui.VendorListUI"/>
+            <MenuItem NAME="Invoice History" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+            <MenuItem NAME="Set Station" COMMAND="com.salesliant.ui.StationUI"/>
+            <MenuItem NAME="Physical Inventory Worksheet" COMMAND="com.salesliant.ui.ItemCountListUI"/>
+            <MenuItem NAME="Logout" COMMAND="com.salesliant.ui.LogoutUI"/>
+            <MenuItem NAME="Time Card" COMMAND="com.salesliant.ui.ClockInOutUI"/>
+        </Menu>
+        <Menu NAME="Exit">
+            <MenuItem NAME="Logout" COMMAND="com.salesliant.ui.LogoutUI"/>
+            <MenuItem NAME="Exit" COMMAND="com.salesliant.ui.ExitUI"/>
+        </Menu>        
+    </MenuBar>
+    <ToolBar NAME="Manager Module">
+        <Button NAME="Quick Sales" LABEL="Quick Sales" ICON="OpenDrawer.gif" COMMAND="com.salesliant.ui.QuickInvoiceUI"/>
+        <Separator/>
+        <Button NAME="Invoice List" LABEL="Invoices" ICON="Invoice.gif" COMMAND="com.salesliant.ui.InvoiceListUI"/>
+        <Separator/>
+        <Button NAME="Inventory List" LABEL="Inventory" ICON="Inventory.gif" COMMAND="com.salesliant.ui.ItemListUI"/>
+        <Separator/>
+        <Button NAME="Customer List" LABEL="Customers" ICON="Customers.gif" COMMAND="com.salesliant.ui.CustomerListUI"/>
+        <Separator/>
+        <Button NAME="Time Card" LABEL="Time Card" ICON="TimeCard.gif" COMMAND="com.salesliant.ui.ClockInOutUI"/>
+        <Separator/>
+        <Button NAME="Open Drawer" LABEL="Drawer" ICON="Price.gif" COMMAND="com.salesliant.ui.DropPayoutUI"/>
+        <Separator/>
+        <Button NAME="Login" LABEL="Login/Logout" ICON="Login.gif" COMMAND="com.salesliant.ui.LogoutUI"/>
+    </ToolBar>
+    <MenuBar NAME="Setup Module">
+        <Menu NAME="Company Setup">
+            <MenuItem NAME="Company" COMMAND="com.salesliant.ui.StoreUI"/>
+            <MenuItem NAME="Employee List" COMMAND="com.salesliant.ui.EmployeeListUI"/>
+            <MenuItem NAME="Employee Group" COMMAND="com.salesliant.ui.EmployeeGroupListUI"/>
+            <Separator/>
+            <MenuItem NAME="Station List" COMMAND="com.salesliant.ui.StationListUI"/>
+            <MenuItem NAME="Service Code List" COMMAND="com.salesliant.ui.ServiceCodeListUI"/>
+            <MenuItem NAME="Return Reason" COMMAND="com.salesliant.ui.ReasonCodeListUI"/>
+            <Separator/>
+            <MenuItem NAME="Tax Class List" COMMAND="com.salesliant.ui.TaxClassListUI"/>
+            <MenuItem NAME="Tax Zone List" COMMAND="com.salesliant.ui.TaxZoneListUI"/>
+            <MenuItem NAME="Tax Rate List" COMMAND="com.salesliant.ui.TaxRateListUI"/>
+            <MenuItem NAME="Tax List" COMMAND="com.salesliant.ui.TaxListUI"/>
+            <MenuItem NAME="Zone List" COMMAND="com.salesliant.ui.ZoneListUI"/>
+            <Separator/>
+            <MenuItem NAME="Post Code List" COMMAND="com.salesliant.ui.PostCodeListUI"/>
+            <Separator/>
+            <MenuItem NAME="PaymentType List" COMMAND="com.salesliant.ui.PaymentTypeListUI"/>
+            <MenuItem NAME="Currency List" COMMAND="com.salesliant.ui.CurrencyListUI"/>
+            <MenuItem NAME="Currency Coin List" COMMAND="com.salesliant.ui.CurrencyCoinListUI"/>
+        </Menu>
+        <Menu NAME="Inventory Module Setup">
+            <MenuItem NAME="Item Price Level List" COMMAND="com.salesliant.ui.ItemPriceLevelListUI"/>
+            <MenuItem NAME="Category List" COMMAND="com.salesliant.ui.CategoryListUI"/>
+            <MenuItem NAME="Department List" COMMAND="com.salesliant.ui.DepartmentListUI"/>
+            <MenuItem NAME="Bin Location" COMMAND="com.salesliant.ui.BinLocationListUI"/>
+            <MenuItem NAME="Label Type List" COMMAND="com.salesliant.ui.LabelTypeListUI"/>
+        </Menu>
+        <Menu NAME="Exit">
+            <MenuItem NAME="Store List" COMMAND="com.salesliant.ui.StoreListUI"/>
+            <MenuItem NAME="Exit" COMMAND="com.salesliant.ui.ExitUI"/>
+        </Menu>        
+    </MenuBar>
+</Menus>

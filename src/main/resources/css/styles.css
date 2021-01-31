@@ -1,0 +1,236 @@
+.header {
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #007 0%, #00d 100%);
+    -fx-text-fill: white;
+    -fx-padding: 20;
+}
+
+.header .title {
+    -fx-font: 18px "Tahoma Bold";
+}
+
+.header .tag-line {
+    -fx-font: 12pt "Tahoma Bold";
+}
+
+.body {
+    -fx-padding: 20;
+}
+
+.border {
+    -fx-border-color: gray;
+    -fx-border-width: 0.5;
+}
+
+.editBtn{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    /*    -fx-text-fill: white;
+        -fx-font-family: "Arial Narrow";
+        -fx-font-weight: bold;
+        -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+        -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+}
+
+/*.menuBar {
+    -fx-font-family: "Serif";
+    -fx-font-size: 13pt;
+    -fx-background-color: rgb(223, 233, 245); 
+    -fx-padding: 1;
+}*/
+
+/*.menu {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 12pt;
+    -fx-background-color: rgb(223, 233, 245); 
+    -fx-padding: 1;    
+    -fx-text-fill: black;
+}*/
+/*
+.menuItem {
+    -fx-font-family: "Serif"; 
+    -fx-font-size: 13pt;
+    -fx-background-color:rgb(223, 233, 245); 
+    -fx-padding: 1
+}*/
+
+/*.toolBar {
+    -fx-background-color: rgb(210, 230, 250)
+}
+
+.button {
+    -fx-font-family: "Serif Bold"; 
+    -fx-font-size: 10pt; 
+    -fx-base: rgb(210, 230, 250); 
+    -fx-padding: 2;
+}*
+
+.choiceBox {
+    -fx-font-family: "Serif"; 
+    -fx-font-size: 7pt;    
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-color: rgb(223, 233, 255);
+    -fx-padding: 0;
+}*/
+
+.comboBox {
+    -fx-font-family: "Serif"; 
+    -fx-font-size: 13.5pt;  
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-color: rgb(223, 233, 255);
+    -fx-padding: 0;
+}
+
+.editView {
+    /*-fx-border-color: rgb(192, 192, 192);*/ 
+    -fx-border-color: gray;
+    -fx-border-width: 0.5;
+    -fx-padding: 10;
+    -fx-hgap: 4;
+    -fx-vgap: 4;
+}
+
+.dialogView {
+    -fx-border-color: rgb(192, 192, 192); 
+    -fx-border-width: 1;
+    -fx-padding: 30;
+    -fx-hgap: 5;
+    -fx-vgap: 5;
+}
+/*.tableView {
+    -fx-cell-size: 38px;
+}*/
+.insideView {
+    -fx-border-color: rgb(192, 192, 192); 
+    -fx-border-width: 0.5;
+    -fx-padding: 2;
+    -fx-hgap: 2;
+    -fx-vgap: 2;
+}
+.hboxPane {
+    /*-fx-background-color: rgb(244, 244, 244);*/
+    /*-fx-border-color: rgb(192, 192, 192);*/ 
+    -fx-border-width: 0.5;
+    -fx-border-color: gray;
+}
+.gridPane {
+    -fx-border-color: rgb(192, 192, 192);
+    -fx-padding: 10;
+}
+.lblWarning {
+    -fx-text-fill: black;
+}
+.subtotal {
+    -fx-text-fill: black;
+    -fx-font-family: "Verdana"; 
+    /*-fx-font-weight: bold;*/
+    -fx-font-size: 14pt;  
+}
+.dialogText {
+    -fx-text-fill: black;
+    -fx-font-family: "Verdana"; 
+    /*-fx-font-weight: bold;*/
+    -fx-font-size: 10pt;  
+}
+.lblLoading {
+    -fx-text-fill: black;
+    -fx-font-family: "Verdana"; 
+    -fx-font-weight: bold;
+    -fx-font-size: 15pt;  
+}
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+.table-row-cell {
+    -fx-cell-size: 30px;
+}
+/*.table-row{
+    line-height: 15px;
+}*/
+/*#money-text-field {
+    -fx-skin: "com.sun.javafx.scene.control.skin.TextFieldSkin";
+}
+
+.money-field {
+    -fx-skin: "com.bizliant.util.control.skin.MoneyFieldSkin";
+    -fx-background-color: -fx-shadow-highlight-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 2;
+    -fx-padding: 3 5 3 5;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-cursor: text;
+}
+
+.money-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: -0.4, 1, 2;
+    -fx-background-radius: 3.4, 2, 2;
+}
+
+.money-field:disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}*/
+.labelTitlePane {
+    -fx-font: 28px Vivaldi;
+}
+/*.editView {
+    -fx-border-color: rgb(192, 192, 192); 
+    -fx-border-width: 0.5;
+}*/
+.borderedTitlePane-titled-title {
+    /*-fx-background-color: white;*/
+    -fx-translate-y: -16;
+}
+
+.borderedTitlePane-titled-border {
+    -fx-content-display: top;
+    -fx-border-insets: 30 15 15 15;
+    /*-fx-background-color: white;*/
+    -fx-border-color: rgb(192, 192, 192);
+    -fx-border-width: 1;
+}
+
+.borderedTitlePane-titled-content {
+    -fx-padding: 10 10 10 10;
+}
+.payment-label {
+    -fx-font: 16px "Serif";
+    -fx-padding: 5;
+    -fx-alignment: center-right;
+}
+.payment-balance-field {
+    -fx-font: 27px "Verdana";
+    -fx-text-fill: white;
+    -fx-padding: 5;
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-border-width: 2; 
+    -fx-border-style: solid;
+    -fx-background-color: black;
+    -fx-alignment: center-right;
+}
+.payment-total-field {
+    -fx-font: 15px "Verdana";
+    -fx-text-fill: white;
+    -fx-padding: 5;
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-border-width: 2; 
+    -fx-border-style: solid;
+    -fx-background-color: black;
+    -fx-alignment: center-right;
+}
+.payment-field {
+    -fx-font: 12px "Verdana";
+    /*-fx-text-fill: white;*/
+    /*-fx-padding: 5;*/
+    /*-fx-border-color: transparent #1d1d1d transparent #1d1d1d;*/
+    -fx-border-width: 0.5; 
+    -fx-border-style: solid;
+    /*-fx-background-color: black;*/
+    -fx-alignment: center-right;
+}
