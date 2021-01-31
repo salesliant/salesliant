@@ -2,7 +2,7 @@
 About
 -----
 
-Salesliant is JavaFX based point of sales and inventory management software. It provides a huge range of capabilities such as billing and order processing, sales monitoring and reporting, inventory purchasing, tracking, returns, analytic, customer data management, employee management.
+Salesliant is JavaFX based point of sales and inventory management software. It provides a huge range of capabilities such as billing and order processing, sales monitoring and reporting, inventory purchasing, tracking, returns, analytic, customer data management, employee management. For more information, visit www.salesliant.com. You can download the user guide, executable files from www.salesliant.com.
 
 Developement
 ------------
